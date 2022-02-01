@@ -1,6 +1,18 @@
 /* CSS file is designed to folow the html file elements order, going from top to bottom */
 /* General elements and tags  and media querys*/
 
+/*
+fonts
+title
+font-family: 'DM Sans', sans-serif;
+names
+font-family: 'Josefin Sans', sans-serif;
+personal name
+font-family: 'Rajdhani', sans-serif;
+compumastercapital
+font-family: 'Staatliches', cursive;
+*/
+
 body {
   font-size: 2.5em;
 }
