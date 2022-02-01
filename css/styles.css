@@ -1,3 +1,33 @@
+/* CSS file is designed to folow the html file elements order, going from top to bottom */
+/* General elements and tags  and media querys*/
+
 body {
-  background-color: cyan;
+  font-size: 2.5em;
+}
+
+div {
+  border-style: solid;
+  border-color: red;
+  border-width: thin;
+  padding: 0;
+  text-align: center;
+}
+
+/* Title Row */
+.titleCol {
+  margin: 2vw;
+}
+
+.title {
+  font-size: 10vw;
+}
+
+/* Images Row */
+
+/* Button Row */
+
+/* Footer Row */
+.cmcLink {
+  text-decoration: none;
+  font-size: 0.5em;
 }
