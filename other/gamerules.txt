@@ -1,0 +1,19 @@
+La piedra aplasta la tijera	(1 gana a 3)
+La tijera corta el papel	(3 gana a 2)
+El papel envuelve la piedra	(2 gana a 1)
+La piedra machaca al lagarto	(1 gana a 4)
+El lagarto envenena a Spock	(4 gana a 5)
+Spock rompe las tijeras		(5 gana a 3)
+La tijera decapita al lagarto	(3 gana a 4)
+El lagarto se come el papel	(4 gana a 2)
+El papel desautoriza a Spock	(2 gana a 5)
+Spock vaporiza la piedra	(5 gana a 1)
+
+________
+
+
+Piedra 1
+Papel 2
+Tijeras 3
+Lagato 4
+Spock 5
