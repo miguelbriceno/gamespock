@@ -1,17 +1,17 @@
 //Instructions.
-alert("Ingresa los nombres de los dos jugadores, ¡luego aprieta el botón y ve quien gana!");
+alert("First enter the name of the players, then press the button and see who wins!");
 
 //Obtain players names.
 var validate = false;
 
 while (validate == false){
-  var nameP1 = prompt("Ingresa el nombre del player 1:");
-  var nameP2 = prompt("Ingresa el nombre del player 2:");
+  var nameP1 = prompt("Enter the name for player 1:");
+  var nameP2 = prompt("Enter the name for player 2:");
 
   if (nameP1 != "" && nameP2 != "") {
     validate = true;
   } else {
-    alert("Uno de los nombres está vacío, escribelos de nuevo.");
+    alert("No empty names allowed!, try again please.");
   }
 }
 

@@ -70,15 +70,15 @@ function winner(randomN1, randomN2) {
   } else if (randomN1 == 1 && randomN2 == 5) {
     playerOneWin = false;
   } else if (randomN1 == randomN2) {
-    playerOneWin = "";
+    playerOneWin = "draw";
   } else {
     alert("Error");
   }
   //Returning message with winner name
-  if (playerOneWin = true) {
-    winner = "Congratulations, " + document.querySelector(".player1") + " is the winner!";
-  } else if (playerOneWin = false) {
-    winner = "Congratulations, " + document.querySelector(".player2") + " is the winner!";
+  if (playerOneWin == true) {
+    winner = "Congratulations, " + document.querySelector(".player1").innerText + " is the winner!";
+  } else if (playerOneWin == false) {
+    winner = "Congratulations, " + document.querySelector(".player2").innerText + " is the winner!";
   } else {
     winner = "This is a draw, try again.";
   }
@@ -114,7 +114,7 @@ function msj(randomN1, randomN2) {
   } else if (randomN1 == 3 && randomN2 == 1) {
     msj = "Scisors are smashed by Stone";
   } else if (randomN1 == 2 && randomN2 == 3) {
-    msj = "Papper is cut by Scisors";
+    msj = "Papper is cutted by Scisors";
   } else if (randomN1 == 1 && randomN2 == 2) {
     msj = "Stone is covered by Papper";
   } else if (randomN1 == 4 && randomN2 == 1) {
@@ -141,17 +141,15 @@ function msj(randomN1, randomN2) {
 /* Function to change the labels -- Recive a winner frase and a personalized
 message. Does not return data */
 function updateTags(whoWin, message) {
-  var titleTag = document.querySelector(".title");
+  var titleTag = document.querySelector(".mainTitle");
   var subTitleTag = document.querySelector(".sub");
   var btnTag = document.querySelector(".playBtn");
 
-  titleTag.innerHTML = whoWin;
-  titleTag.setAttribute("color", "#FFE162");
-  titleTag.setAttribute("font-size", "8vw");
-  subTitleTag.innerHTML = message;
-  subTitleTag.setAttribute("color", "#EFDAD7");
-  subTitleTag.setAttribute("font-size", "5vw");
-  btnTag.innerHTML = "Play again!"
+  titleTag.textContent = whoWin;
+  titleTag.setAttribute("style", "color: #FFE162");
+  subTitleTag.textContent = message;
+  subTitleTag.setAttribute("style", "color: #EFDAD7");
+  btnTag.innerHTML = '<i class="fas fa-rocket ship"></i>Play again!';
 }
 
 
@@ -168,4 +166,5 @@ function playTheGame() {
   var subTitleLabel = msj(randomPlayer1, randomPlayer2);
   //Change tags using the winner and the message
   updateTags(titleLabel, subTitleLabel);
+  window.scrollTo(0, 0);
 }

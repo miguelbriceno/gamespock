@@ -24,16 +24,17 @@ body {
   margin: 2vw;
 }
 
-.title {
+.mainTitle {
   color: #1572A1;
-  font-size: 10vw;
+  font-size: 8vw;
   font-family: 'DM Sans', sans-serif;
 }
 
 .sub {
   color: #1572A1;
-  font-size: 8vw;
+  font-size: 5vw;
   font-family: 'DM Sans', sans-serif;
+  margin: 4vw;
 }
 
 /* Images Row */
@@ -43,8 +44,8 @@ body {
 }
 
 .picture {
-    width: 100%; /* or any custom size */
-    height: 100%;
+    max-width: 100%; /* or any custom size */
+    max-height: 100%;
     object-fit: contain;
     margin: 1vw;
 }
